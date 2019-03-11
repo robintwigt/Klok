@@ -54,10 +54,10 @@ TweenMax.from(".data", 0.5, {opacity:0, scale:0, ease:Bounce.easeOut});
 */
 TweenMax.from(".data", 2, {left:-500, rotation:-20});
 
-TweenMax.from(".wolken1", 5, {rotation:360, opacity:1, scale:25, ease:Sine.easeOut});
-TweenMax.from(".wolken2", 5, {rotation:360, opacity:1, scale:75, ease:Sine.easeOut});
+TweenMax.from(".wolken1", 5, {rotation:300, opacity:1, scale:25, ease:Sine.easeOut});
+TweenMax.from(".wolken2", 5, {rotation:300, opacity:1, scale:75, ease:Sine.easeOut});
 
-TweenMax.from(".zon", 3, {top:1000, ease:Power4.easeOut, delay:5});
+TweenMax.from(".zon", 20, {top:1000, ease:Expo.easeOut, delay:4});
 
 
 
