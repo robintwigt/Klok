@@ -69,12 +69,38 @@ TweenMax.from(".data", 2, {left:-500, rotation:-20});
 
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+
 function uurVerandering() {
     var today = new Date();
     var uur = today.getHours();
+
 }
 
-function verandering() {    
+
+
+//Achtergrond kleur
+
+function veranderingAchtergrond() {
+    var today = new Date();
+    var uur = today.getHours();
+    var achtergrondKleur = document.getElementById('body');
+    
+    if (uur >= 6 && uur <= 17) {
+      achtergrondKleur.style.backgroundColor = "#3653c4";
+    }
+    else {
+      achtergrondKleur.style.backgroundColor = "#000000";
+    }
+}
+
+
+
+//Maan of zon
+
+function veranderingZonMaan() { 
+    var today = new Date();
+    var uur = today.getHours();
+
     if (uur >= 6 && uur <= 17) {
       document.getElementById('maanZon').style.background = 'url(img/zon.png) repeat';
     }
@@ -83,37 +109,49 @@ function verandering() {
     }
 }
 
-window.onload = function() {
-    uurVerandering();
-    verandering();
-};
 
+//Wolken of sterren
 
-
-
-
-/*
-function uurVerandering() {
+function veranderingWolkenSterren1() { 
     var today = new Date();
     var uur = today.getHours();
-}
 
-function verandering() {
-    var bodyColor = document.getElementsByClass('data');
-    
-    if (uur < 8) {
-      bodyColor.style.backgroundColor = "#000000";
+    if (uur >= 6 && uur <= 17) {
+      document.getElementById('sterrenWolken1').style.background = 'url(img/wolken.png) repeat'; //url(img/zon.png) repeat
     }
     else {
-      bodyColor.style.backgroundColor = "#3653c4";
+      document.getElementById('sterrenWolken1').style.background = 'url(img/sterren.png) repeat';
     }
 }
+
+function veranderingWolkenSterren2() { 
+    var today = new Date();
+    var uur = today.getHours();
+
+    if (uur >= 6 && uur <= 17) {
+      document.getElementById('sterrenWolken2').style.background = 'url(img/wolken.png) repeat'; //url(img/zon.png) repeat
+    }
+    else {
+      document.getElementById('sterrenWolken2').style.background = 'url(img/sterren.png) repeat';
+    }
+}
+
+
+
 
 window.onload = function() {
     uurVerandering();
-    verandering();
+    veranderingAchtergrond();
+    veranderingZonMaan();
+    veranderingWolkenSterren1();
+    veranderingWolkenSterren2();
 };
-*/
+
+
+
+
+
+
 
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
