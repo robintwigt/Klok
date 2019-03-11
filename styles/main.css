@@ -1,0 +1,84 @@
+body {
+  color: #222;
+  background-color: #3653c4;
+  /*background-color: black;*/
+  overflow: hidden;
+  margin: 0px;
+}
+
+div.data {
+  position: absolute;
+  bottom: 5%;
+  margin-left: 25px;
+}
+
+h1 {
+  color: #f2f2f2;
+  font-size: 50px;
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Unica One', cursive;
+  padding: 0px;
+  margin: 0px;
+}
+
+hr {
+  background-color: white;
+  color: white;
+  border: none;
+  height: 3px;
+}
+
+.zon {
+  position: absolute;
+  top: -15%;
+  width: 100%;
+  height: 500px;
+  background: url('../img/zon.png') repeat;
+  opacity: 0;
+}
+
+.wolken1 {
+  position: absolute;
+  top: -5%;
+  width: 100%;
+  height: 341px;
+  background: url('../img/wolken.png') repeat;
+  opacity: 0;
+}
+
+.wolken2 { 
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  height: 341px;
+  background: url('../img/wolken.png') repeat;
+  opacity: 0;
+}
+
+.maan {
+  position: absolute;
+  top: -15%;
+  width: 100%;
+  height: 500px;
+  background: url('../img/maan.png') repeat;
+  opacity: 0;
+}
+
+.sterren1 {
+  position: absolute;
+  top: -5%;
+  width: 100%;
+  height: 341px;
+  background: url('../img/sterren.png') repeat;
+  opacity: 0;
+}
+
+.sterren2 { 
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  height: 341px;
+  background: url('../img/sterren.png') repeat;
+  opacity: 0;
+}
