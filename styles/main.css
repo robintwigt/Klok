@@ -1,7 +1,7 @@
 body {
   color: #222;
-  background-color: #3653c4;
-  /*background-color: black;*/
+  /*background-color: #3653c4;*/
+  /*background-color: #000000;*/
   overflow: hidden;
   margin: 0px;
 }
@@ -14,7 +14,6 @@ div.data {
 
 h1 {
   color: #f2f2f2;
-  font-size: 50px;
   position: relative;
   text-transform: uppercase;
   font-family: 'Unica One', cursive;
@@ -82,3 +81,81 @@ hr {
   background: url('../img/sterren.png') repeat;
   opacity: 0;
 }
+
+.overdag {
+  opacity: 1;
+  scale: 0;
+}
+
+
+
+.dedatum {
+  grid-area: dedatum;
+}
+
+.detijd {
+  grid-area: detijd;
+}
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 499px){
+  body{
+    display: grid;
+    grid-template-columns: 100%;
+
+    grid-template-areas: 
+          "dedatum"
+          "detijd"
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 834px){
+  body{
+    display: grid;
+    grid-template-columns: 100%;
+
+    grid-template-areas: 
+          "dedatum"
+          "detijd"
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width: 835px) and (max-width: 1199px){
+  body{
+    display: grid;
+    grid-template-columns: 100%;
+
+    grid-template-areas: 
+          "dedatum"
+          "detijd"
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  body{
+    display: grid;
+    grid-template-columns: 100%;
+
+    grid-template-areas: 
+          "dedatum"
+          "detijd"
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+}
+
