@@ -67,16 +67,6 @@ TweenMax.from(".zon", 20, {top:1000, ease:Expo.easeOut, delay:4});
 
 
 
-
-
-/*------------------------------------------------------------------------------*/
-
-
-
-
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-
 function uurVerandering() {
     var today = new Date();
     var uur = today.getHours();
@@ -127,7 +117,7 @@ function veranderingWolkenSterren1() {
       document.getElementById('sterrenWolken1').style.background = 'url(img/wolken.png) repeat'; //url(img/zon.png) repeat
     }
     else {
-      document.getElementById('sterrenWolken1').style.background = 'url(img/sterren.png) repeat';
+      document.getElementById('sterrenWolken1').style.background = 'url(img/mindersterren.png) repeat';
     }
 }
 
@@ -139,7 +129,7 @@ function veranderingWolkenSterren2() {
       document.getElementById('sterrenWolken2').style.background = 'url(img/wolken.png) repeat'; //url(img/zon.png) repeat
     }
     else {
-      document.getElementById('sterrenWolken2').style.background = 'url(img/sterren.png) repeat';
+      document.getElementById('sterrenWolken2').style.background = 'url(img/mindersterren.png) repeat';
     }
 }
 
@@ -160,7 +150,7 @@ window.onload = function() {
 
 
 
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//----------------------------------------------------
 
 
 
